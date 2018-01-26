@@ -1,0 +1,36 @@
+.game
+    +bg('bk_index_01.png', #eeeeee)
+
+.game
+    .content
+        max-width: 800px
+        min-height: 10vw
+        margin: 0 auto
+        +breakpoint(mobile)
+            max-width: 100vw
+            margin: 0 auto
+            padding-top: 1.5em
+        &:last-child
+            padding: 0 7em
+            +breakpoint(mobile)
+                padding : 0
+    .container > p
+        margin: -1.5em auto 2em
+        width: 50em
+        +breakpoint(pad)
+            margin: 0 auto
+            width: 90vw
+        +breakpoint(mobile)
+            margin: 0 auto
+            width: 90vw
+
+.game >.content,.game > .content:last-child 
+    +breakpoint(pad)
+        padding: 0 1em
+
+.icon-game
+    margin: 0
+    padding: 1em 2.5em
+    +breakpoint(mobile)
+        margin: 0
+        padding: 0.8em 1.8em

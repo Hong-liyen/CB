@@ -1,0 +1,45 @@
+.contactUs
+    background: url(../images/imgside/contactside.png) no-repeat 8% bottom,url(../images/background/bk_contact.png) no-repeat center
+    +breakpoint(pc)
+        background: none,url(../images/background/bk_contact.png) no-repeat center
+    .contactBox
+        color: #fff
+        margin-top: 0.5vw
+        padding: 0.3vw 1vw
+        border: 8px solid $textRed
+        background-color: $textRed
+        +breakpoint(pc)
+            padding: 0.3vw 1.5vw
+        +breakpoint(pad)
+            padding: 2vw 3.5vw 1.5vw
+        .col-md-6:nth-child(1)
+            padding: 4em
+            text-align: left
+            +breakpoint(pc)
+                padding: 4em 2em
+            +breakpoint(pad)
+                padding: 1.5em
+            h4 
+                text-align: center
+                margin-bottom: 2vw
+            p 
+                color: #fff
+                padding: 0
+                line-height: 1.6
+            .infor 
+                margin: 2vw 0
+                line-height: 2
+        .col-md-6:nth-child(2)
+            background-color: #d0d0d0
+            padding: 2.6vw 2vw
+            
+        input 
+            color: #444    
+        input,textarea,button
+            width: 100%
+            margin-bottom: 1.2vw
+            padding: 5px
+        button 
+            padding: 1em 0
+            background-color: $textRed
+            color: #fff 
